@@ -4,7 +4,7 @@ FROM openjdk:8-jre-alpine
 
 MAINTAINER Jiri Zuna <jiri@zunovi.cz>
 
-ENV MINECRAFT_VERSION=1.12
+ENV MINECRAFT_VERSION=1.12.1
 
 # Install wget and certificates
 RUN     apk update \
