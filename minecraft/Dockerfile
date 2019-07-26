@@ -9,7 +9,7 @@ ENV MINECRAFT_JAR="https://launcher.mojang.com/v1/objects/3dc3d84a581f14691199cf
 
 # Install wget and certificates
 RUN     apk update \
-    &&  apk add ca-certificates wget \
+    &&  apk add ca-certificates wget bash \
     &&  update-ca-certificates
 
 # Download the server jar file
@@ -22,4 +22,7 @@ VOLUME /data
 
 EXPOSE 25565
 
-CMD echo eula=true > /data/eula.txt && java -jar /opt/minecraft/server.jar
+ADD ./minecraft.sh /opt
+RUN chmod a+x /opt/minecraft.sh
+
+CMD /opt/minecraft.sh
