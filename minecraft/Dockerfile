@@ -4,8 +4,8 @@ FROM openjdk:8-jre-alpine
 
 MAINTAINER Jiri Zuna <jiri@zunovi.cz>
 
-ENV MINECRAFT_VERSION=1.15.2
-ENV MINECRAFT_JAR="https://launcher.mojang.com/v1/objects/bb2b6b1aefcd70dfd1892149ac3a215f6c636b07/server.jar"
+ENV MINECRAFT_VERSION=1.16.3
+ENV MINECRAFT_JAR="https://launcher.mojang.com/v1/objects/f02f4473dbf152c23d7d484952121db0b36698cb/server.jar"
 
 # Install wget and certificates
 RUN     apk update \
