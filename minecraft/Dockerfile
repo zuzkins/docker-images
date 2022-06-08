@@ -1,11 +1,12 @@
 # Minecraft Server image
 
-FROM openjdk:8-jre-alpine
+FROM openjdk:17-jre-alpine
 
 MAINTAINER Jiri Zuna <jiri@zunovi.cz>
 
-ENV MINECRAFT_VERSION=1.16.3
-ENV MINECRAFT_JAR="https://launcher.mojang.com/v1/objects/f02f4473dbf152c23d7d484952121db0b36698cb/server.jar"
+# https://www.minecraft.net/en-us/download/server
+ENV MINECRAFT_VERSION=1.19
+ENV MINECRAFT_JAR="https://launcher.mojang.com/v1/objects/e00c4052dac1d59a1188b2aa9d5a87113aaf1122/server.jar"
 
 # Install wget and certificates
 RUN     apk update \
