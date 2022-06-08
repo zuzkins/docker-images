@@ -1,6 +1,6 @@
 # Minecraft Server image
 
-FROM openjdk:17-jre-alpine
+FROM openjdk:17-alpine
 
 MAINTAINER Jiri Zuna <jiri@zunovi.cz>
 
